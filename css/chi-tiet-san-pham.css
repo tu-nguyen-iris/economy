@@ -1,0 +1,23 @@
+﻿.single-product .item_single label {
+    color: palevioletred;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.single-product .item_single {
+    padding-bottom: 10px;
+}
+
+.single_title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.productInfo {
+    margin-top: 30px;
+}
+
+.img-product img {
+    max-width: 100%;
+}
