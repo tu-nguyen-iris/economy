@@ -58,7 +58,7 @@ public partial class cms_admin_SanPham_QuanLyDanhMuc_DanhMuc_ThemMoi : System.We
     private void LayDanhMucCha()
     {
         DataTable dt = new DataTable();
-        dt = emdepvn.DanhMuc.Thongtin_Danhmuc_by_MaDMCha("0");
+        dt = mypham.DanhMuc.Thongtin_Danhmuc_by_MaDMCha("0");
         ddlDanhMucCha.Items.Clear();
 
         ddlDanhMucCha.Items.Add(new ListItem("Danh mục gốc","0"));
@@ -72,7 +72,7 @@ public partial class cms_admin_SanPham_QuanLyDanhMuc_DanhMuc_ThemMoi : System.We
     private void LayDanhMucCon(string MaDMCha, string KhoangCach)
     {
         DataTable dt = new DataTable();
-        dt = emdepvn.DanhMuc.Thongtin_Danhmuc_by_MaDMCha(MaDMCha);
+        dt = mypham.DanhMuc.Thongtin_Danhmuc_by_MaDMCha(MaDMCha);
 
         for (int i = 0; i < dt.Rows.Count; i++)
         {
@@ -96,7 +96,7 @@ public partial class cms_admin_SanPham_QuanLyDanhMuc_DanhMuc_ThemMoi : System.We
             //else ltrThongBao.Text = "Nhập sai hoặc thiếu thông tin! Mời nhập lại";
 
 
-            emdepvn.DanhMuc.Danhmuc_Inser(tbTenDanhMuc.Text, flAnhDaiDien.FileName, tbThuTu.Text, ddlDanhMucCha.SelectedValue, "");
+            mypham.DanhMuc.Danhmuc_Inser(tbTenDanhMuc.Text, flAnhDaiDien.FileName, tbThuTu.Text, ddlDanhMucCha.SelectedValue, "");
             ltrThongBao.Text = "<div class='thongBaoTaoThanhCong' style='color:#ff006e;font-size:16px;padding-bottom:20px;text-align:center;font-weight:bold'>Đã tạo danh mục: " + tbTenDanhMuc.Text + "</div>";
 
             if (cbThemNhieuDanhMuc.Checked)
@@ -134,7 +134,7 @@ public partial class cms_admin_SanPham_QuanLyDanhMuc_DanhMuc_ThemMoi : System.We
                 tenAnhDaiDien = hdTenAnhDaiDienCu.Value;
             }
 
-            emdepvn.DanhMuc.Danhmuc_Update(id, tbTenDanhMuc.Text, tenAnhDaiDien, tbThuTu.Text, ddlDanhMucCha.SelectedValue);
+            mypham.DanhMuc.Danhmuc_Update(id, tbTenDanhMuc.Text, tenAnhDaiDien, tbThuTu.Text, ddlDanhMucCha.SelectedValue);
 
              //đẩy trang về trang danh sách các damnh mục đã tạo
             Response.Redirect("Admin.aspx?modul=SanPham&modulphu=DanhMuc");
