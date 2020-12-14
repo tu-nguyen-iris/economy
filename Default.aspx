@@ -28,6 +28,8 @@
                     <nav>
                         <ul id="MenuItems">
                             <asp:Literal ID="ltrMenu" runat="server"></asp:Literal>
+                            <li><a href="/Default.aspx?modul=SanPham&modulphu=GioHang">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
                         </ul>
                         <div id="dangnhap">
                             <asp:PlaceHolder ID="plChuaDangNhap" runat="server">
@@ -46,10 +48,6 @@
                             </asp:PlaceHolder>
                         </div>
                     </nav>
-                    <a href="/Default.aspx?modul=SanPham&modulphu=GioHang">
-                        <img src="https://t4.ftcdn.net/jpg/00/97/00/05/240_F_97000552_d8RwiZAnFewznisQphPtjyxxRNAAZQ92.jpg" width="30px" height="30px"></a>
-                    <img src="images/menu.png" class="menu-icon"
-                        onclick="menutoggle()">
                 </div>
                 <div class="row d-none">
                     <div class="col-6">
@@ -110,12 +108,12 @@
                         <h3>Download Our App</h3>
                         <p>Download App for Android and ios mobile phone</p>
                         <div class="app-logo">
-                            <img src="images/play-store.png">
-                            <img src="images/app-store.png">
+                           <i class="fa fa-android" aria-hidden="true"></i>
+                            <i class="fa fa-apple" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="footer-col-2">
-                        <img src="images/logo-white.png">
+                       <i class="fa fa-podcast" aria-hidden="true"></i>
                         <p>
                             Our Purpose Is To Sustainably Make the Pleasure and
                         Benefits of Sports Accessible to the Many

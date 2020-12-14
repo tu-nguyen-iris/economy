@@ -6,12 +6,9 @@
     "\\cms\\admin\\SanPham",
     "\\cms\\admin\\SanPham\\QuanLySanPham",
     "\\cms\\admin\\TaiKhoan",
-    "\\cms\\admin\\TinTuc\\DanhMucTin",
-    "\\cms\\admin\\TinTuc\\DanhSachTinTuc",
     "\\cms\\display",
     "\\cms\\display\\SanPham",
     "\\cms\\display\\ThanhVien"
   ],
-  "SelectedNode": "\\cms\\display",
   "PreviewInSolutionExplorer": false
 }
