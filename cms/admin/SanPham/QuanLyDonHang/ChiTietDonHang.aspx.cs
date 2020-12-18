@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using emdepvn;
+using mypham;
 
 public partial class cms_admin_SanPham_QuanLyDonHang_ChiTietDonHang : System.Web.UI.Page
 {
@@ -74,7 +74,7 @@ public partial class cms_admin_SanPham_QuanLyDonHang_ChiTietDonHang : System.Web
 
     private string LayTenSanPhamTheoMaSP(string maSP)
     {
-        DataTable dt = emdepvn.SanPham.Thongtin_Sanpham_by_id(maSP);
+        DataTable dt = mypham.SanPham.Thongtin_Sanpham_by_id(maSP);
         if (dt.Rows.Count>0)
             return dt.Rows[0]["TenSP"].ToString();
         return "";
