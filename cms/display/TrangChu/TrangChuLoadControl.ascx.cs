@@ -47,7 +47,7 @@ public partial class cms_display_TrangChu_TrangChuLoadControl : System.Web.UI.Us
             link = "Default.aspx?modul=SanPham&modulphu=ChiTietSanPham&id=" + dt.Rows[i]["MaSP"];
 
             s += @"
-<div class='col-md-4 col-6'>
+<div class='col-md-4 col-6 custom-block text-center'>
     <a class='d-block' href='" + link + @"' title='" + dt.Rows[i]["TenSP"] + @"'>
         <img class='bg-sanpham' src='/pic/sanpham/" + dt.Rows[i]["AnhSP"] + @"' alt='" + dt.Rows[i]["TenSP"] + @"' />
     </a>

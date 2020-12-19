@@ -69,13 +69,13 @@
             </div>
         </div>
         <!--thanh tìm kiếm + giỏ hàng-->
-        <div class="search_">
+        <div class="search_ mt-4">
             <div class="form-inline">
                 <div style="margin-left: auto" class="form-group mb-2">
                     <label for="staticEmail2" class="sr-only">Email</label>
                     <input type="text" class="form-control-plaintext form-control" placeholder="Từ khóa tìm kiếm" name="pr_name" value="<%=tukhoa %>" id="keysearch" onkeydown="CheckPostSearch(event)" />
                 </div>
-                <a href="javascript://" onclick="PostSearch()" class="btn btn-danger">Confirm identity</a>
+                <a href="javascript://" onclick="PostSearch()" style="padding:10px;"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
 
             <script type="text/javascript">

@@ -38,7 +38,7 @@ public partial class cms_admin_SanPham_QuanLyDonHang_Ajax_DonHang : System.Web.U
             id = Request.Params["id"];
 
             //Thực hiện code xóa          
-            emdepvn.DonDatHang.Dondathang_Delete(id);
+            mypham.DonDatHang.Dondathang_Delete(id);
 
             // Trả về thông báo 1 thực hiện thành công 2 thực hiện không thành công
             Response.Write("1");

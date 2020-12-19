@@ -43,9 +43,9 @@ public partial class cms_display_SanPham_TimKiem : System.Web.UI.UserControl
             link = "Default.aspx?modul=SanPham&modulphu=ChiTietSanPham&id=" + dt.Rows[i]["MaSP"];
 
             s += @"
-<div class='col-md-4 col-6'>
+<div class='col-md-4 col-6 custom-block text-center'>
     <a class='d-block' href='" + link + @"' title='" + dt.Rows[i]["TenSP"] + @"'>
-        <img src='/pic/sanpham/" + dt.Rows[i]["AnhSP"] + @"' alt='" + dt.Rows[i]["TenSP"] + @"' />
+        <img class='img-fluid' src='/pic/sanpham/" + dt.Rows[i]["AnhSP"] + @"' alt='" + dt.Rows[i]["TenSP"] + @"' />
     </a>
     <a class='tenSp' href='" + link + @"' title='" + dt.Rows[i]["TenSP"] + @"'>
         " + dt.Rows[i]["TenSP"] + @"

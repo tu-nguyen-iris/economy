@@ -64,7 +64,7 @@ public partial class cms_admin_TaiKhoan_TaiKhoan_ThemMoi : System.Web.UI.UserCon
     private void LayQuyenDangNhap()
     {
         DataTable dt = new DataTable();
-        dt = emdepvn.QuyenDangNhap.Thongtin_Quyendangnhap();
+        dt = mypham.QuyenDangNhap.Thongtin_Quyendangnhap();
         ddlQuyenDangNhap.Items.Clear();
         for (int i = 0; i < dt.Rows.Count; i++)
         {
@@ -81,11 +81,11 @@ public partial class cms_admin_TaiKhoan_TaiKhoan_ThemMoi : System.Web.UI.UserCon
             //Mã hóa mật khẩu trước khi thêm vào database
             string matKhau = "";
             if(matKhau != null)
-              matKhau = emdepvn.MaHoa.MaHoaMD5(tbMatKhau.Text);
+              matKhau = mypham.MaHoa.MaHoaMD5(tbMatKhau.Text);
             else
-                matKhau = emdepvn.MaHoa.MaHoaMD5(hdMatKhauCu.Value);//TRƯỜNG hợp ko nhập mật khẩu thì lấy lại mật khẩu cũ
+                matKhau = mypham.MaHoa.MaHoaMD5(hdMatKhauCu.Value);//TRƯỜNG hợp ko nhập mật khẩu thì lấy lại mật khẩu cũ
 
-            emdepvn.DangKy.Dangky_Inser(
+            mypham.DangKy.Dangky_Inser(
                 tbTenDangNhap.Text, matKhau, tbEmail.Text, 
                 tbDiaChi.Text, tbHoTen.Text, "", tbNgaySinh.Text , 
                 ddlGioiTinh.SelectedValue, ddlQuyenDangNhap.SelectedValue, "");
@@ -110,9 +110,9 @@ public partial class cms_admin_TaiKhoan_TaiKhoan_ThemMoi : System.Web.UI.UserCon
             #region code nút chỉnh sửa
 
             //Mã hóa mật khẩu trước khi thêm vào database
-            string matKhau = emdepvn.MaHoa.MaHoaMD5(tbMatKhau.Text);
+            string matKhau = mypham.MaHoa.MaHoaMD5(tbMatKhau.Text);
 
-            emdepvn.DangKy.Dangky_Update(
+            mypham.DangKy.Dangky_Update(
                 id, matKhau, tbEmail.Text,
                 tbDiaChi.Text, tbHoTen.Text, "", tbNgaySinh.Text,
                 ddlGioiTinh.SelectedValue, ddlQuyenDangNhap.SelectedValue);

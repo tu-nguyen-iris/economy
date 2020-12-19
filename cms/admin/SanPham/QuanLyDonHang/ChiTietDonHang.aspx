@@ -47,14 +47,6 @@
                 </tr>
             </table>
         </div>
-        <div class="thongTinCuoi">
-            Mọi nhu cầu liên hệ của quý khách, vui lòng liên hệ với chúng tôi theo thông tin dưới đây.<br/>
-            Cửa hàng thời trang nữ Em đẹp<br/>
-            Địa chỉ: Nhà 18T2 Khu đô thị Trung Hòa - Nhân Chính, Thanh Xuân, Hà Nội<br/>
-            Số điện thoại: 0902 234 481<br/>
-            Email: emdepfashion@gmail.com<br/>
-            Rất hân hạnh được phục vụ quý khách!
-        </div>
         <div style="position:fixed;z-index:1;bottom:10px;right:10px">Gợi ý: nhấn <b>Ctrl P</b> để in đơn hàng</div>
     </div>
     </form>
